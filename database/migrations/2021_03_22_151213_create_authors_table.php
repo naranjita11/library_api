@@ -20,7 +20,6 @@ class CreateAuthorsTable extends Migration
             $table->string("image_name")->nullable();
             $table->string("image_path")->nullable();
             $table->text("bio")->nullable();
-            $table->text("quotes")->nullable();
         });
     }
 
