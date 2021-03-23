@@ -15,18 +15,13 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->foreignID("author_id");
+            $table->foreignID("author_id")->constrain()->onDelete();
             $table->timestamps();
             $table->string("title");
             $table->text("synopsis");
             $table->string("image_name");
             $table->string("image_path");
-            $table->string("author");
-            $table->enum("genre", ["crime", "nature", "cooking", "fantasy", "sci-fi", "philosophy", "science", "modern", "programming", "art", "design"]);
-            $table->enum("type", ["fiction", "non-fiction"]);
-            $table->string("binding");
             $table->integer("pages");
-            $table->string("publisher");
             $table->date("publication_date");
             $table->string("rrp");
         });

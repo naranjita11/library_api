@@ -26,7 +26,6 @@ class AuthorFactory extends Factory
             "bio"=>$this->faker->paragraph(1),
             "image_name"=>$this->faker->userName,
             "image_path" => $this->faker->imageUrl("800", "600", "cats"),
-            "quotes"=>$this->faker->sentence(2),
         ];
     }
 }
