@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Book;
+use App\Models\Author;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BookFactory extends Factory
@@ -22,14 +23,14 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
-            "title"=>$this->faker->name,
-            "author_id"=>$this->faker->name,
-            "synopsis"=>$this->faker->paragraph(1),
-            "image_name"=>$this->faker->userName,
-            "image_path"=>$this->faker->imageUrl("800", "600", "cats"),
-            "pages"=>$this->faker->sentence(2),
-            "publication_date"=>$this->faker->sentence(2),
-            "rrp"=>$this->faker->sentence(2),
+            "author_id" => Author::factory(),
+            "title" => $this->faker->sentence,
+            "synopsis" => $this->faker->paragraph(5),
+            "image_name" => $this->faker->userName,
+            "image_path" => $this->faker->imageUrl("800", "600", "cats"),
+            "pages" => $this->faker->numberBetween($min = 30, $max = 3000),
+            "publication_date" => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            "rrp" => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 5, $max = 100),
         ];
     }
 }
