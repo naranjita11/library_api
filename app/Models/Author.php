@@ -24,7 +24,6 @@ class Author extends Model
     public function setQuotes($strings)
     {
         $quotes = Quote::fromStrings($strings, $this->id);
-
     }
 
 }
