@@ -24,7 +24,7 @@ class AuthorSeeder extends Seeder
                 "image_path" => "/public/resources/data/evelyn_waugh.jpeg",
             ],
             [
-                "name" => "Hunter.S.Thompson",
+                "name" => "Hunter S. Thompson",
                 "bio" => "Hunter Stockton Thompson was an American journalist and author, and the founder of the gonzo journalism movement. He first rose to prominence with the publication of Hell's Angels (1967), a book for which he spent a year living and riding with the Hells Angels motorcycle club to write a first-hand account of the lives and experiences of its members.",
                 "image_name" => "A photo of Hunter S Thompson",
                 "image_path" => "/public/resources/data/hunter_s_thompson.jpeg",
@@ -81,7 +81,7 @@ class AuthorSeeder extends Seeder
             [
                 "name" => "Gabriel García Márquez",
                 "bio" => "Gabriel García Márquez was a Colombian novelist, short-story writer, screenwriter, and journalist, known affectionately as Gabo or Gabito throughout Latin America.",
-                "image_name" => "A photo of Gabriel Garcia Marquez",
+                "image_name" => "A photo of Gabriel García Márquez",
                 "image_path" => "/public/resources/data/gabriel_garcia_marquez.jpeg",
             ]
         ];
