@@ -22,6 +22,7 @@ class AuthorSeeder extends Seeder
                 "bio" => "Arthur Evelyn St. John Waugh was an English writer of novels, biographies, and travel books; he was also a prolific journalist and book reviewer. His most famous works include the early satires Decline and Fall and A Handful of Dust, the novel Brideshead Revisited, and the Second World War trilogy Sword of Honour.",
                 "image_name" => "A photo of Evelyn Waugh",
                 "image_path" => "/public/resources/data/evelyn_waugh.jpeg",
+                "quotes" => ["1", "2", "3"]
             ],
             [
                 "name" => "Hunter S. Thompson",
@@ -87,7 +88,17 @@ class AuthorSeeder extends Seeder
         ];
 
         foreach($authors as $author) {
-            Author::create($author);
+            
+            if (isset($author["quotes"])) {
+                $quotes = $author["quotes"];
+                unset($author["quotes"]);
+            }
+
+            $authorInDB = Author::create($author);
+            if (isset($quotes)) {
+                $authorInDB->setQuotes($quotes);
+            }
+            unset($quotes); 
         }
     }
 }

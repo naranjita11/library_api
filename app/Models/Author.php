@@ -16,6 +16,17 @@ class Author extends Model
         return $this->hasMany(Book::class);
     }
 
+    public function quotes()
+    {
+        return $this->hasMany(Quote::class);
+    }
+
+    public function setQuotes($strings)
+    {
+        $quotes = Quote::fromStrings($strings, $this->id);
+
+    }
+
 }
 
 

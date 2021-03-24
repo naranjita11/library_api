@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\QuoteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,8 @@ Route::group(["prefix" => "books"], function () {
         Route::get("", [BookController::class, "show"]);
 
     });
+});
+
+Route::group(["prefix" => "quotes"], function () {
+    Route::get("", [QuoteController::class, "randomQuote"]);
 });
