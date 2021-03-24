@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Book;
 use App\Models\Author;
 use Illuminate\Database\Seeder;
+use Database\Seeders\BookSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            AuthorSeeder::class
+            AuthorSeeder::class,
+            BookSeeder::class,
         ]);
     }
 }
