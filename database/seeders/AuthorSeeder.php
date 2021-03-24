@@ -64,8 +64,8 @@ class AuthorSeeder extends Seeder
             ]
         ];
 
-            foreach($authors as $author) {
-                Author::create($author);
-            }
+        foreach($authors as $author) {
+            Author::create($author);
+        }
     }
 }
