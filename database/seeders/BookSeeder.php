@@ -21,7 +21,7 @@ class BookSeeder extends Seeder
                 "synopsis" => "The protagonist is Guy Crouchback, heir of a declining aristocratic English Roman Catholic family. Guy has spent his thirties at the family villa in Italy (based on the Earl of Carnarvon's 1885 villa Altachiara in Portofino[1][2]). Crouchback has been shunning the world after the failure of his marriage and has decided to return to England at the very beginning of the Second World War, in the belief that the creeping evils of modernity, gradually apparent in the Soviet Union and Nazi Germany, have become all too clearly displayed as a real and embodied enemy.",
                 "pages" => 256,
                 "image_name" => "Men at Arms Book Cover",
-                "image_path" => "/resources/data/evelyn_waugh_men_at_arms.jpg",
+                "image_path" => "/resources/data/evelyn_waugh_men_at_arms.jpeg",
                 "publication_date" => "1952-01-01",
                 "rrp" => "12.99"
             ],
@@ -31,7 +31,7 @@ class BookSeeder extends Seeder
                 "title" => "Officers and Gentlemen",
                 "synopsis" => "Sent back to the UK in disgrace at the end of the first novel, Guy Crouchback — heir of a declining aristocratic English Roman Catholic family—manages to find a place in a fledgling commando brigade, training on a Scottish island under an old friend, Tommy Blackhouse. Tommy is also the man for whom Guy's wife Virginia left him. Another trainee is Ivor Claire, whom Guy regards as the flower of English chivalry. He (Guy) learns to exploit the niceties of military ways of doing things with the assistance of Colonel \"Jumbo\" Trotter, an elderly Halberdier who knows all the strings to pull.",
                 "image_name" => "Officers and Gentlemen book cover",
-                "image_path" => "/resources/data/evelyn_waugh_officers_and_gentlemen.jpg",
+                "image_path" => "/resources/data/evelyn_waugh_officers_and_gentlemen.jpeg",
                 "pages" => 267,
                 "publication_date" => "1955-03-07",
                 "rrp" => "15.99"
@@ -42,7 +42,7 @@ class BookSeeder extends Seeder
                 "title" => "Unconditional Surrender",
                 "synopsis" => "Guy Crouchback spends 1941–1943 in Britain, mostly at desk jobs. He turns 40 and, with the German invasion of Russia and Britain's subsequent alliance with the Soviet Union, feels the futility of the war. American soldiers are all over London. Virginia has fallen on hard times and is reduced to selling her furs. She had been persuaded to accompany Trimmer, her former hairdresser who was set up as a war hero for media consumption. She becomes pregnant by him and searches futilely for an abortionist. Eventually she decides to look for a husband instead. Crouchback is chosen for parachute training prior to being sent into action one last time. The commanding officer at the training center is Ludovic. In the previous volume, Officers and Gentlemen, Ludovic had deserted from his unit in Crete, and in the process murdered two men, one while escaping from the island by boat. Crouchback was also on board, and although he was delirious and barely aware of his surroundings, Ludovic fears exposure if the two meet. Already a misfit as an officer, Ludovic becomes increasingly paranoid and isolated.",
                 "image_name" => "Unconditional Surrender",
-                "image_path" => "/resources/data/evelyn_waugh_unconditional_surrender.jpg",
+                "image_path" => "/resources/data/evelyn_waugh_unconditional_surrender.jpeg",
                 "pages" => 244,
                 "publication_date" => "1949-03-07",
                 "rrp" => "19.99"
@@ -53,7 +53,7 @@ class BookSeeder extends Seeder
                 "title" => "Kingdom of Fear",
                 "synopsis" => "The book seems to begin as memoir or an autobiography, but rapidly devolves into numerous fragmented accounts of Thompson's exploits which could be termed as a type of Gonzo biography. There is a rough adherence to actual chronology though many events in the book are not in order. However, some continuity does exist throughout the work, for example, the \"Witness\" segments, dealing with Gail Palmer's sexual assault lawsuit against Thompson, appearing once every section in roughly the same area. In addition to these larger narratives, there are also several sections which hold no connection to each other in any way, with the exception of some of the same people or places from a previous section being mentioned.",
                 "image_name" => "Kingdom of Fear book cover",
-                "image_path" => "/resources/data/hunter_s_thompson_kingdom_of_fear.jpg",
+                "image_path" => "/resources/data/hunter_s_thompson_kingdom_of_fear.jpeg",
                 "pages" => 275,
                 "publication_date" => "2003-12-07",
                 "rrp" => "9.99",
@@ -65,7 +65,7 @@ class BookSeeder extends Seeder
                 "synopsis" => "The book details Thompson's experiences living with the Hells Angels, a notorious motorcycle club in California. The author spent over a year embedded with one chapter, learning their unique subculture and immersing himself in their lifestyle. He recounts his time spent traveling through California by motorcycle, and describes the contrast between the general lawlessness of the club and the exaggerated fear that very lawlessness engenders in society.",
                 "pages" => 320,
                 "image_name" => "Hells Angels book cover",
-                "image_path" => "/resources/data/hunter_s_thompson_hells_angels.jpg",
+                "image_path" => "/resources/data/hunter_s_thompson_hells_angels.jpeg",
                 "publication_date" => "1967-03-01",
                 "rrp" => "9.99"
             ],
@@ -74,7 +74,7 @@ class BookSeeder extends Seeder
                 "title" => "Catch 22",
                 "synopsis" => "This scathing war satire follows Capt. John Yossarian (Alan Arkin), a pilot stationed in the Mediterranean who flies bombing missions during World War II. Attempting to cope with the madness of armed conflict, Yossarian struggles to find a way out of his wartime reality. Surrounded by eccentric military officers, such as the opportunistic 1st Lt. Milo Minderbinder (Jon Voight), Yossarian must resort to extreme measures to escape his dire and increasingly absurd situation.",
                 "image_name" => "Catch 22 book cover",
-                "image_path" => "/resources/data/joseph_heller_catch_22.jpg",
+                "image_path" => "/resources/data/joseph_heller_catch_22.jpeg",
                 "pages" => 400,
                 "publication_date" => "1960-03-01",
                 "rrp" => "12.99"
@@ -85,7 +85,7 @@ class BookSeeder extends Seeder
                 "title" => "Journey into Fear",
                 "synopsis" => "An American engineer in Istanbul, Howard Graham (Joseph Cotten), becomes the target of a Nazi assassination due to his involvement in improving the Turkish navy. With the help of police Colonel Haki (Orson Welles), Graham escapes from his hotel to board a ship to safety, leaving behind his wife (Ruth Warrick). On board, he encounters a number of passengers, including the dancer Josette Martel (Dolores del Río). However, the passenger Peter Banat (Jack Moss) is not who he appears to be.",
                 "image_name" => "Journey into Fear book cover",
-                "image_path" => "/resources/data/eric_ambler_journey_into_fear.jpg",
+                "image_path" => "/resources/data/eric_ambler_journey_into_fear.jpeg",
                 "pages" => 200,
                 "publication_date" => "1940-03-01",
                 "rrp" => "6.99"
@@ -96,7 +96,7 @@ class BookSeeder extends Seeder
                 "title" => "Epitaph for a Spy",
                 "synopsis" => "Wrongly accused of espionage after a photo lab technician and a French secret agent (Julien Mitchell) discover incriminating surveillance photos on his camera, Peter Vadassy (James Mason), an Austrian medical student on holiday on the French Riviera, returns to his room at the Hotel Reserve. Under threat of deportation, Vadassy launches an investigation into his fellow guests and struggles to unmask the spy who framed him in a place where suspicions abound and trust is a luxury he can't afford.",
                 "image_name" => "Epitaph for a Spy book cover",
-                "image_path" => "/resources/data/eric_ambler_epitaph_for_a_spy.jpg",
+                "image_path" => "/resources/data/eric_ambler_epitaph_for_a_spy.jpeg",
                 "pages" => 204,
                 "publication_date" => "1944-03-01",
                 "rrp" => "7.99"
