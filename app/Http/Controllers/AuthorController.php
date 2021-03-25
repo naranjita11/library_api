@@ -85,11 +85,13 @@ class AuthorController extends Controller
         //
     }
 
-    function searchAuthorName($name)
+    function searchAuthorName(...$name)
     {
-        $authors = Author::where("name", "like", "%".$name."%")->get();
-
-        return AuthorResource::collection($authors);
+        if (count($name) && preg_match("/\S/", urldecode($name[0]))) {
+            $authors = Author::where("name", "like", "%".$name[0]."%")->get();
+            return AuthorResource::collection($authors);
+        } else {
+            return AuthorResource::collection([]);
+        }
     }
-
 }

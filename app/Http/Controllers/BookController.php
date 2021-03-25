@@ -83,10 +83,14 @@ class BookController extends Controller
     {
         //
     }
-    function searchBookTitle($title)
+    function searchBookTitle(...$title)
     {
-        $books = Book::where("title", "like", "%".$title."%")->get();
-        return BookResource::collection($books);
-    }
+        if (count($title) && preg_match("/\S/", urldecode($title[0]))) {
 
+            $books = Book::where("title", "like", "%".$title[0]."%")->get();
+            return BookResource::collection($books);
+        } else {
+        return BookResource::collection([]);
+        }
+    }
 }
