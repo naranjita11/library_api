@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Author;
 use Illuminate\Http\Request;
 use App\Http\Resources\AuthorResource;
+use App\Http\Resources\BookResource;
 
 class AuthorController extends Controller
 {
@@ -83,4 +84,12 @@ class AuthorController extends Controller
     {
         //
     }
+
+    function searchAuthorName($name)
+    {
+        $authors = Author::where("name", "like", "%".$name."%")->get();
+
+        return AuthorResource::collection($authors);
+    }
+
 }
